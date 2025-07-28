@@ -1,0 +1,46 @@
+<div style="display: flex; justify-content: center">
+    <p style="font-size: 25px; color: purple"></p>
+    <p>Ngfor</p>
+</div>
+
+<div class="container">
+    <ul>
+        <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+    </ul>
+    <ul>
+        <li *ngFor="let fruit of fruits; index as i">{{ i + 1 }} {{ fruit }}</li>
+    </ul>
+
+    <ul>
+        <li *ngFor="
+        let user of users;
+   
+        first as isFirst;
+        last as isLast;
+        even as isEven;
+        odd as isOdd
+      ">
+            {{ user.name }}
+            <span *ngIf="isFirst"> ->First</span>
+            <span *ngIf="isLast"> ->Last</span>
+            <span *ngIf="isEven"> (at EVEN)</span>
+            <span *ngIf="isOdd"> (At ODD position)</span>
+        </li>
+    </ul>
+
+    <ul>
+        <li *ngFor="let item of products">
+            <span *ngIf="item.inStock"> {{item.name}}
+
+            </span>
+
+        </li>
+    </ul>
+    <ul>
+        <ng-container *ngFor="let item of products">
+            <li *ngIf="item.inStock"> {{item.name}}
+
+            </li>
+        </ng-container>
+    </ul>
+</div>

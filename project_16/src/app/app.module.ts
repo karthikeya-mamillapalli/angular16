@@ -20,7 +20,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import { TempRefVariablesComponent } from './components/temp-ref-variables/temp-ref-variables.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 import { IfComponent } from './components/if/if.component';
-import { SwitchComponent } from './components/switch/switch.component'
+import { SwitchComponent } from './components/switch/switch.component';
+import { ForComponent } from './components/for/for.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SwitchComponent } from './components/switch/switch.component'
     TempRefVariablesComponent,
     TwoWayDataBindingComponent,
     IfComponent,
-    SwitchComponent
+    SwitchComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,
