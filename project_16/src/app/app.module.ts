@@ -18,7 +18,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import { TempRefVariablesComponent } from './components/temp-ref-variables/temp-ref-variables.component';
-import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component'
+import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
+import { IfComponent } from './components/if/if.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
     ClassBindingComponent,
     EventBindingComponent,
     TempRefVariablesComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    IfComponent
   ],
   imports: [
     BrowserModule,

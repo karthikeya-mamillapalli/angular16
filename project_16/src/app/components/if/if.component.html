@@ -1,0 +1,22 @@
+<div style="display: flex;justify-content: center;">
+    <p style="font-size: 25px; color: purple;"></p>
+    <p>NGIF METHOD :</p> 
+</div>
+<p *ngIf="true">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque commodi minus aliquid, 
+    tempora illo nostrum tempore earum, reiciendis, maiores eveniet blanditiis
+    ! Consectetur, unde consequatur. Quidem laudantium cupiditate corporis asperiores eum.
+</p>
+
+<p *ngIf="isLoggedIn;else loggedout" >Welcome buddy</p>
+
+<ng-template #loggedout>
+     mama vachi pilla ni iche dam dam dam .kukka poi nakka vache dam dam dam
+</ng-template>
+
+<ng-container *ngIf="!isLoading;then loadingBlock; else contentBlock "></ng-container>
+
+<ng-template #loadingBlock>lodaing data ..</ng-template >
+<ng-template #contentBlock>not loading data</ng-template>
+<p *ngIf="user">{{user.name}}</p>
+<p *ngIf="user as u ">{{u.name}}</p>
