@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input ,Output} from '@angular/core';
 
 @Component({
   selector: 'app-receiver',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ReceiverComponent {
 @Input() rip:any
+@Output() reply = new EventEmitter()
+
+replyMessage(){
+  this.reply.emit("this is childs reply")
+}
 }

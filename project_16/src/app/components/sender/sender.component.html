@@ -7,13 +7,14 @@
         <div class="p-3">
           <h4><u>parent component</u></h4>
           <h5>Incoming message</h5>
+          <h4>{{incomingMessage}}</h4>
           <h4>Message from child here..</h4>          
         </div>
     </div>
     <div class="child">
         <div class="p-3">
             <h4>child component container</h4>
-            <app-receiver [rip]="message"></app-receiver>
+            <app-receiver (reply)="incomingMessage=$event" [rip]="message"></app-receiver>
         </div>
     </div>
 </div>

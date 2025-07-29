@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class SenderComponent {
 message="hey buddy from parent"
+incomingMessage=''
 }
