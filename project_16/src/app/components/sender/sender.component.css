@@ -12,6 +12,6 @@
     background-color:chartreuse;
     margin: 50px;
     border-radius: 10px;
-    box-shadow: 2px 4px 8px;
+    box-shadow: 2px 4px 8px #000;
 }
 
