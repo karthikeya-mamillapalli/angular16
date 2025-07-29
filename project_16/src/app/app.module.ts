@@ -21,7 +21,9 @@ import { TempRefVariablesComponent } from './components/temp-ref-variables/temp-
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 import { IfComponent } from './components/if/if.component';
 import { SwitchComponent } from './components/switch/switch.component';
-import { ForComponent } from './components/for/for.component'
+import { ForComponent } from './components/for/for.component';
+import { SenderComponent } from './components/sender/sender.component';
+import { ReceiverComponent } from './components/receiver/receiver.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ForComponent } from './components/for/for.component'
     TwoWayDataBindingComponent,
     IfComponent,
     SwitchComponent,
-    ForComponent
+    ForComponent,
+    SenderComponent,
+    ReceiverComponent
   ],
   imports: [
     BrowserModule,
