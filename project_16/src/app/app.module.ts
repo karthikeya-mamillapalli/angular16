@@ -25,7 +25,9 @@ import { ForComponent } from './components/for/for.component';
 import { SenderComponent } from './components/sender/sender.component';
 import { ReceiverComponent } from './components/receiver/receiver.component';
 import { TopicComponent } from './components/topic/topic.component';
-import { ViewchildComponent } from './components/viewchild/viewchild.component'
+import { ViewchildComponent } from './components/viewchild/viewchild.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ViewchildComponent } from './components/viewchild/viewchild.component'
     SenderComponent,
     ReceiverComponent,
     TopicComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
