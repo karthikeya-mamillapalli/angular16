@@ -23,7 +23,9 @@ import { IfComponent } from './components/if/if.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ForComponent } from './components/for/for.component';
 import { SenderComponent } from './components/sender/sender.component';
-import { ReceiverComponent } from './components/receiver/receiver.component'
+import { ReceiverComponent } from './components/receiver/receiver.component';
+import { TopicComponent } from './components/topic/topic.component';
+import { ViewchildComponent } from './components/viewchild/viewchild.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ReceiverComponent } from './components/receiver/receiver.component'
     SwitchComponent,
     ForComponent,
     SenderComponent,
-    ReceiverComponent
+    ReceiverComponent,
+    TopicComponent,
+    ViewchildComponent
   ],
   imports: [
     BrowserModule,
