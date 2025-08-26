@@ -1,0 +1,31 @@
+<div class="class">
+  <p>
+    <mat-form-field>
+      <mat-label>Enter something... </mat-label>
+      <input matInput #inputBox />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter something... </mat-label>
+      <input matInput #inputBox />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter something... </mat-label>
+      <input matInput #inputBox />
+    </mat-form-field>
+  </p>
+
+  <button mat-raised-button color="warn" (click)="LogAllValues()">
+    Log all Buttons
+  </button>
+  <hr />
+  <p>
+    <app-child2></app-child2>
+    <app-child2></app-child2>
+    <app-child2></app-child2>
+  </p>
+  <button (click)="greetAll()" mat-stroked-button color="primary">
+    Greet All children
+  </button>
+</div>

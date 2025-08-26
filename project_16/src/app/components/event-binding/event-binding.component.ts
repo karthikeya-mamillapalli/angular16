@@ -63,9 +63,10 @@ this.keydown=evt.key
  }
 
  keyenter="";
- onKeyEnter(evt:any){
-  if(evt.key=='Enter')
-  console.log(evt)
+ onKeyEnter(){
+  //  console.log(evt)
+  //if(evt.key=='Enter')
+  //console.log(evt)
   this.keyenter="enter key pressed"
  }
 
